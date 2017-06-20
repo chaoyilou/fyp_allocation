@@ -1,0 +1,60 @@
+html,body {
+    font: 14px/1.5 Microsoft YaHei,Helvitica,Verdana,Arial,san-serif;
+}
+.navbar_wrapper{
+    background-color: #138ed4;
+}
+.navbar-default .navbar-brand{
+    color: #fff;
+}
+.navbar-right .dropdown-toggle{
+	color: #fff;
+}
+
+/*datatable*/
+.nav-pills{
+	margin-bottom: 20px;
+	background-color: #eee;
+}
+.dropdown-menu{
+	min-width: 0px;
+}
+.table-bordered>thead>tr>th{
+	border-bottom-width:0px;
+}
+.dataTables_empty{
+	text-align: center;
+}
+/*bootstrap modal框*/
+.modal-dialog{
+	margin-top: 10%;
+}
+.input_group_first{
+	margin-top: 0px !important;
+}
+.input-group{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 3%;
+}
+.input-group-addon{
+	min-width: 100px;
+	background-color: rgba(255, 165, 0, 0.43);
+}
+.modal-header .modal_title_extend{
+	margin-left: 5%;
+}
+.modal-header .extentd_id{
+	color: red;
+}
+/*页面侧边栏取消*/
+#page-wrapper{
+	margin-left:0px !important;
+}
+#page-wrapper{
+	background: #eee;
+}
+/*页面大标题底部border*/
+.page-header{
+border-bottom: 1px solid #000;
+}
