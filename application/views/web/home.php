@@ -50,7 +50,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <a style="color:#fff;" href="<?php echo site_url('/') . 'web/projects' ?>">
-                                Project Proposals
+                                Project List
                             </a>
                         </div>
                         <div class="panel-body">
@@ -90,7 +90,7 @@
                     <div class="panel panel-info">
                         <div class="panel-heading panel-heading4">
                         <a style="color:#31708f;" href="<?php echo site_url('/') . 'web/meetings/supervisorlist' ?>">
-                            Arrange Meetings
+                            Arrange Meeting
                         </a>
                         </div>
                         <div class="panel-body">

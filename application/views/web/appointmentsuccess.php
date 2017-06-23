@@ -18,12 +18,12 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">开会预约成功</h1>
+            <h1 class="page-header">Resevation Status</h1>
         </div>
         <!-- /.col-lg-12 -->
     </div>
     <div class="form-group form-group-one">
-        <p class="successnotice">恭喜预约成功</p>
+        <p class="successnotice">Submit succeeded</p>
     </div>
     <div class="form-group form-group-two">
         <a href="<?php echo site_url('web/home'); ?>"><input type="button" class="btn btn-info btn_submit" value="返回首页"></a>

@@ -74,7 +74,7 @@ class Meetings extends CI_Controller
 	public function appointment(){
 		$supervisor_id = $this->input->get( 'id' );
 		$data['supervisorInfo'] = $this->supervisors_model->get_supervisor_detail_for_web( $supervisor_id );
-		$data['title'] = '开会预约';
+		$data['title'] = 'Meeting Reservation';
 		$this->load->view('web/header',$data);
 		$this->load->view('web/menu_top');
 		$this->load->view('web/appointment');
@@ -97,7 +97,7 @@ class Meetings extends CI_Controller
 			$data['appointment_preference'] = $postData['appointType'];
 			$data['memo'] = isset($postData['appointMemo']) ? $postData['appointMemo'] : '';
 			$this->meetings_model->appointment_submisson( $data );
-			$data['title'] = '开会预约成功';
+			$data['title'] = 'Reservation Status';
 			$this->load->view('web/header',$data);
 			$this->load->view('web/menu_top');
 			$this->load->view('web/appointmentsuccess');
@@ -105,7 +105,7 @@ class Meetings extends CI_Controller
 		}else{
 			$supervisor_id = $this->input->post( 'hidden_supervisor_id' );
 			$data['supervisorInfo'] = $this->supervisors_model->get_supervisor_detail_for_web( $supervisor_id );
-			$data['title'] = '开会预约';
+			$data['title'] = 'Meeting Reservation';
 			$this->load->view('web/header',$data);
 			$this->load->view('web/menu_top');
 			$this->load->view('web/appointment');

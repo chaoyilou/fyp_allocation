@@ -71,7 +71,7 @@
             </div>
             <input type="hidden" name="hidden_supervisor_id" value="<?php echo $supervisorInfo['id']; ?>">
             <div class="form-group">
-                <button type="submit" class="btn btn-info btn_submit">Save Change</button>
+                <button type="submit" class="btn btn-info btn_submit">Submit</button>
             </div>
         </div>
     </form>
