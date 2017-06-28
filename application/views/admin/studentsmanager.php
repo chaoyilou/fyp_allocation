@@ -33,7 +33,7 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>登陆账号</th>
+                    <th>Username</th>
                     <th>Name</th>
                     <th>Photo</th>
                     <th>Email</th>
@@ -50,7 +50,7 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>登陆账号</th>
+                    <th>Username</th>
                     <th>Name</th>
                     <th>Photo</th>
                     <th>Email</th>
@@ -67,7 +67,7 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>登陆账号</th>
+                    <th>Username</th>
                     <th>Name</th>
                     <th>Photo</th>
                     <th>Email</th>
