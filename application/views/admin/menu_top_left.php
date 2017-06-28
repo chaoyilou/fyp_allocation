@@ -195,10 +195,10 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="<?php echo site_url('admin/operators/selfinfo'); ?>"><i class="fa fa-user fa-fw"></i> 个人中心</a>
+                        <li><a href="<?php echo site_url('admin/operators/selfinfo'); ?>"><i class="fa fa-user fa-fw"></i> Personal Information</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="<?php echo site_url('admin/login'); ?>"><i class="fa fa-sign-out fa-fw"></i>退出登录</a>
+                        <li><a href="<?php echo site_url('admin/login'); ?>"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->

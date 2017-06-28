@@ -61,20 +61,20 @@
         <input class="form-control" readonly name="account" value="<?php echo $operatorDetail['nickname']; ?>">
     </div>
     <div class="form-group has-success">
-        <label>输入旧密码</label>
-        <input type="password" class="form-control old_password" name="old_password" placeholder="请输入旧密码" value="">
+        <label>Old Password</label>
+        <input type="password" class="form-control old_password" name="old_password" placeholder="Please enter the old password" value="">
     </div>
     <div class="form-group has-success">
-        <label>新密码</label>
-        <input type="password" class="form-control password" name="password" placeholder="请输入学生账号登陆密码" value="">
+        <label>New Password</label>
+        <input type="password" class="form-control password" name="password" placeholder="Please enter the new password" value="">
     </div>
     <div class="form-group has-success">
-        <label>新密码确认</label>
-        <input type="password" class="form-control password_confirm" name="password_confirm" placeholder="请再次输入登陆密码" value="">
+        <label>Confirm New Password </label>
+        <input type="password" class="form-control password_confirm" name="password_confirm" placeholder="Please enter the new password again" value="">
     </div>
     <div class="form-group form-group-last">
-        <button type="submit" class="btn btn-default">确认修改</button>
-        <button type="reset" class="btn btn-default">重置</button>
+        <button type="submit" class="btn btn-default">Confirm Change</button>
+        <button type="reset" class="btn btn-default">Default</button>
     </div>
 </div>
 
@@ -86,17 +86,17 @@
       var password_confirm = $('.password_confirm').val();
 
       if( old_password == '' ){
-        alert('旧密码不能为空');
+        alert('Please enter the old password.');
         return false;
       }
 
       if( password == '' || password_confirm == '' ){
-        alert('新密码不能为空');
+        alert('Please enter the new password.');
         return false;
       }
 
       if( password != password_confirm ){
-        alert('密码确认不一致');
+        alert('Wrong password confirmation.');
         return false;
       }
 

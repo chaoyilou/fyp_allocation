@@ -117,7 +117,7 @@
             <!-- END LOGIN FORM -->
         </div>
 
-        <!--<div class="copyright" ><span id="copyright"></span> © 帝国理工大学 </div> -->
+        <!--<div class="copyright" ><span id="copyright"></span> © Imperial College London </div> -->
 
         <script type="text/javascript">
             function login_change(){
