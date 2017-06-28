@@ -83,7 +83,7 @@ class Students extends CI_Controller
 		$meetingsCount = $this->meetings_model->get_unprocessing_meeting_count($userid);
 		$data['meetingsCount'] = $meetingsCount;
 
-		// 如果有id参数，说明是课题修改，需要将原有课题信息显示到页面上
+		// 如果有id参数，说明是学生修改，需要将原有学生信息显示到页面上
 		if( isset($_GET['id']) && !empty($_GET['id']) ){
 			$studentDetail = $this->students_model->student_detail( $_GET['id'] );
 		}else{
@@ -107,16 +107,25 @@ class Students extends CI_Controller
 		$this->load->helper(array('form', 'url'));
 		$student_hidden_id = $this->input->post( 'id' );
 		$this->form_validation->set_rules('name','Name','required');
-		$this->form_validation->set_rules('account','Account','required|is_unique[students.account]');
+		
+		if(empty( $student_hidden_id)){
+			$this->form_validation->set_rules('account','Account','required|is_unique[students.account]');
+		}else{
+			$this->form_validation->set_rules('account','Account','required');
+		}
+
 		if( empty( $student_hidden_id ) ){
 			$this->form_validation->set_rules('password','Password','required');
 			$this->form_validation->set_rules('password_confirm','Password Confirm','required|matches[password]');
 		}
-		if( !empty( $student_hidden_id ) ){
-			$this->form_validation->set_rules('email','Email','required|valid_email');
-		}else{
+
+		if(empty($student_hidden_id)){
 			$this->form_validation->set_rules('email','Email','required|valid_email|is_unique[students.email]');
+		}else{
+			$this->form_validation->set_rules('email','Email','required|valid_email');
 		}
+
+
 		$this->form_validation->set_rules('stream','stream','required');
 
 		if( $this->form_validation->run() ){
@@ -158,7 +167,7 @@ class Students extends CI_Controller
 			$meetingsCount = $this->meetings_model->get_unprocessing_meeting_count($userid);
 			$data['meetingsCount'] = $meetingsCount;
 
-			// 如果有id参数，说明是课题修改，需要将原有课题信息显示到页面上
+			// 如果有id参数，说明是学生修改，需要将原有学生信息显示到页面上
 			if( isset($_GET['id']) && !empty($_GET['id']) ){
 				$studentDetail = $this->students_model->student_detail( $_GET['id'] );
 			}else{

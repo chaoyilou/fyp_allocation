@@ -183,7 +183,7 @@ class Supervisors extends CI_Controller
 			$meetingsCount = $this->meetings_model->get_unprocessing_meeting_count($userid);
 			$data['meetingsCount'] = $meetingsCount;
 
-			// 如果有id参数，说明是课题修改，需要将原有课题信息显示到页面上
+			// 如果有id参数，说明是教授修改，需要将原有教授信息显示到页面上
 			if( isset($_GET['id']) && !empty($_GET['id']) ){
 				$supervisorDetail = $this->supervisors_model->supervisor_detail( $_GET['id'] );
 			}else{
