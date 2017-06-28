@@ -55,7 +55,7 @@ class Students extends CI_Controller
 	public function deleteStudent(){
 		$student_id = $this->input->post('student_id');
 		$res = $this->students_model->students_delete( $student_id );
-		echo return_msg( '0', '删除成功' );
+		echo return_msg( '0', 'Delete Succeeded' );
 	}
 
 	/**
@@ -65,7 +65,7 @@ class Students extends CI_Controller
 	public function recoverStudent(){
 		$student_id = $this->input->post('student_id');
 		$res = $this->students_model->students_recover( $student_id );
-		echo return_msg( '0', '删除成功' );
+		echo return_msg( '0', 'Restore Succeeded' );
 	}
 
 	/**
@@ -90,7 +90,7 @@ class Students extends CI_Controller
 			$studentDetail = '';
 		}
 
-		$data['title'] = 'Add a New Stuudent';
+		$data['title'] = 'Add a New Student';
 		$data['menues'] = $res;
 		$data['studentDetail'] = $studentDetail;
 		$this->load->view('admin/header',$data);

@@ -80,7 +80,7 @@ class Supervisors extends CI_Controller
 	public function recoverSupervisor(){
 		$supervisor_id = $this->input->post('supervisor_id');
 		$res = $this->supervisors_model->supervisors_recover( $supervisor_id );
-		echo return_msg( '0', 'Delete Succeeded' );
+		echo return_msg( '0', 'Restore Succeeded' );
 	}
 
 	/**
