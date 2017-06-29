@@ -26,6 +26,6 @@
         <p class="successnotice">Submit succeeded</p>
     </div>
     <div class="form-group form-group-two">
-        <a href="<?php echo site_url('web/home'); ?>"><input type="button" class="btn btn-info btn_submit" value="返回首页"></a>
+        <a href="<?php echo site_url('web/home'); ?>"><input type="button" class="btn btn-info btn_submit" value="Go back to welcome page"></a>
     </div>
 </div>
